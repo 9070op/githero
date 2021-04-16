@@ -1,0 +1,158 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.power:hover {
+    font-size: 17px;
+}
+
+.momo {
+    border-radius: 90px;
+}
+
+.skills-bar {
+    width: auto;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px 30px;
+}
+
+.skills-bar .bar {
+    margin: 20px 0px;
+}
+
+.skills-bar .bar:first-child {
+    margin-top: 0px;
+}
+
+.skills-bar .bar .info {
+    margin-bottom: 5px;
+}
+
+.skills-bar .bar .info span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px rgba(225, 255, 255, 0.8);
+    transform: scaleX(0);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1)forwards;
+}
+
+.bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1)forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    right: 0px;
+    top: -10px;
+    width: 0px;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+
+.bar .progress-line span::after {
+    position: absolute;
+    content: "80%";
+    right: 0px;
+    top: -28px;
+    color: #fff;
+    background: #000;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 5px;
+}
+
+.progress-line.html span::after {
+    content: "70%";
+}
+
+.progress-line.css span::after {
+    content: "65%";
+}
+
+.progress-line.javascript span::after {
+    content: "80%";
+}
+
+.progress-line.Bootstrap span::after {
+    content: "70%";
+}
+
+.progress-line.Node-Express span::after {
+    content: "70%";
+}
+
+.progress-line.Mongo-DB span::after {
+    content: "75%";
+}
+
+.progress-line.html span {
+    width: 60%;
+}
+
+.progress-line.css span {
+    width: 50%;
+}
+
+.progress-line.javascript span {
+    width: 80%;
+}
+
+.progress-line.Bootstrap span {
+    width: 75%;
+}
+
+.progress-line.Node-Express span {
+    width: 65%;
+}
+
+.progress-line.Mongo-DB span {
+    width: 70%;
+}
+
+.heading {
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-text {
+    font-family: 'Roboto Slab', serif;
+}
+
+.card-title {
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fa {
+    cursor: pointer;
+}
